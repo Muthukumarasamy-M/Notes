@@ -1,0 +1,149 @@
+* {
+  padding: 0%;
+  margin: 0%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+header {
+  padding: 20px;
+  background-color: bisque;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 1000; /* Set a high z-index value */
+}
+.container {
+  display: flex;
+  flex: 1;
+}
+.left-panel {
+  flex: 1;
+  padding: 20px;
+  background-color: #ddd;
+  min-width: 20%;
+  overflow-y: auto; /* Add scrollbar if content overflows */
+}
+#searchbar {
+  width: 150%;
+  min-width: 60px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+  box-sizing: border-box;
+}
+#searchbar::placeholder {
+  padding: 30px;
+}
+.fa-magnifying-glass {
+  position: absolute;
+  right: 85%; /* Adjust as needed */
+  top: 35%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.fa-magnifying-glass:hover {
+  font-size: 1.1em;
+}
+.search-container {
+  position: relative;
+  width: fit-content; /* Adjust as needed */
+}
+.middle-panel {
+  flex: 2;
+  min-width: 60%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+}
+
+#title {
+  border: none;
+  height: 50px;
+  font-size: 1.4em;
+  padding-left: 30px;
+  border: none; /* Add bottom border */
+  margin-bottom: 10px; /* Add spacing between input and textarea */
+  width: calc(
+    100% - 30px
+  ); /* Make title input full width, considering the padding */
+}
+
+#notetextarea {
+  height: 400px;
+  min-width: 90%;
+  box-sizing: border-box;
+  margin: 5px 20px;
+  padding-top: 20px;
+  width: calc(100% - 40px); /* Adjust width to account for padding */
+}
+.note {
+  border: 1px solid #ccc;
+  width: 240%;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.note:hover {
+  background-color: #f0f0f0;
+}
+.note .title {
+  font-weight: bold;
+}
+
+.note .content-preview {
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the options container */
+.options {
+  display: flex;
+}
+
+.options button:first-child {
+  margin-left: 20px;
+}
+.options button,
+.right-buttons button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 30px;
+  transition: color 0.3s, background-color 0.3s; /* Transition effect for color and background-color */
+  padding: 5px;
+}
+.options button:hover,
+.right-buttons button:hover {
+  color: white;
+  background-color: #333;
+}
+
+/* Style the buttons container */
+.right-buttons button:last-child {
+  margin-right: 20px;
+}
+
+.right-buttons button i {
+  margin-right: 5px;
+}
+.right-panel {
+  flex: 3;
+}
+#info {
+  margin-top: auto; /* Push #info to the top */
+  text-align: center; /* Align text within #info to center */
+}
+.words {
+  margin: 30px 0; /* Adjusted margin */
+}
