@@ -29,16 +29,18 @@
             class="fas fa-search fa-magnifying-glass"
             onclick="handleicon()"
           ></i>
+          <button id="addnote" onclick="addNote()"><strong>+</strong> add note</button>
         </div>
         <div id="notesContainer"></div>
       </div>
       <div class="middle-panel">
-        <input type="text" placeholder="title" id="title" required />
-        <textarea
+        <input type="text" placeholder="Title" id="title" required />
+        <pre
           name="notetextarea"
           id="notetextarea"
+          contenteditable="true"
           placeholder="Enter your content here"
-        ></textarea>
+        ></pre>
         <div class="buttons">
           <div class="options">
             <button onclick="makeBold()" class="bold-btn">
@@ -57,16 +59,16 @@
 
           <div class="right-buttons">
             <button onclick="saveNote()">
-              <i class="fas fa-save"></i> Save Note
+              <i class="fas fa-save"></i> Save
             </button>
             <button onclick="deleteNote()">
-              <i class="fas fa-trash-alt"></i> Delete Note
+              <i class="fas fa-trash-alt"></i> Delete
             </button>
           </div>
         </div>
       </div>
       <div class="right-panel">
-        <h2 id="info">info</h2>
+        <h2 id="info">Info</h2>
         <p class="words">
           <strong>File Name:</strong><span id="fileName"></span>
         </p>
