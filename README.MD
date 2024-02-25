@@ -1,6 +1,9 @@
 
 ---
+
 # Note-Taking Application
+
+**Live Demo:** [Notes-Taking Application Demo](https://muthukumarasamy-m.github.io/Notes/)
 
 This is a simple note-taking web application developed using HTML, CSS, and JavaScript.
 
@@ -24,14 +27,16 @@ This is a simple note-taking web application developed using HTML, CSS, and Java
 
 ## Files Included
 
-- `index.html`: The main HTML file containing the structure of the web application.
-- `style.css`: CSS file for styling the web application.
-- `scrip.js`: JavaScript file containing the functionality for the note-taking application.
+- [`index.html`](index.html): The main HTML file containing the structure of the web application.
+- [`style.css`](style.css): CSS file for styling the web application.
+- [`scrip.js`](scrip.js): JavaScript file containing the functionality for the note-taking application.
 
 ## Getting Started
 
-To get started with this application, simply open the `index.html` file in a web browser. No additional setup is required.
+To get started with this application, simply open the [`index.html`](index.html) file in a web browser. No additional setup is required.
 
 ## Contributing
 
 Contributions to this project are welcome. Feel free to fork the repository, make improvements, and submit pull requests.
+
+---
